@@ -14,6 +14,8 @@ Nesse projeto em específico só tem três rodadas.
 A criança pode ouvir a pronúncia correta, gravar sua própria voz e ouvir depois para comparar.
 Logo em seguida ela faz a associação da palavra com uma imagem. Ela precisa escolher qual é a imagem que representa a palavra.
 
+Eu não sou profissional na área, mas com algumas pesquisas, encontei que essas são maneiras úteis de ajudar uma criança.
+----
 -----------------
 
 Eu sei que o código pode ser aprimorado. Por isso, eu peço sua ajuda, se for possível.
