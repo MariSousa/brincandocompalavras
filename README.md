@@ -24,3 +24,5 @@ Pode mandar um email para mim: mari.sousa.136@gmail.com
 
 OBS.: por alguma razão a gravação do audio no mobile não está funcionando. Não sei resolver isso.
 Então, sugiro que teste o projeto em um desktop.
+
+OBS2.: o foco não foi o css, por isso não criei um site muito elaborado.
