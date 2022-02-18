@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincando com as palavras</title>
+
+    <link rel="stylesheet" href="_css/estilo.css">
+
+
+</head>
+<body>
+    <div class="main">
+        <div class="titulo">
+            <h1 id="tituloPrincipal">Seja bem vindo!! Sua missão é escolher a imagem certa.  <br>
+            Vamos começar!! Aperte o botão abaixo!
+            </h1>
+            <input type="button" value="Começar"  id="comecarbtn" onclick="comecar()">
+            <input type="button" value="Reiniciar"  id="reiniciarbtn" onclick="comecar()">
+        </div>   
+
+        <div class="conteudo">
+
+            <h2 id="palavra"></h2>
+
+                <div id="ouvirPalavra">
+                    <p id="pronuncia"></p>
+                    <audio controls>                    
+                        <source src="_audios/Bota.mp3" type="audio/mp3">
+                    </audio>
+
+                    <audio controls>
+                        <source src="_audios/faca.mp3" type="audio/mp3">
+                    </audio>
+
+                    <audio controls>
+                        <source src="_audios/pato.mp3" type="audio/mp3">
+                    </audio>
+
+                </div>
+                
+
+            <div class="conteudoInterativo">
+                <div class="audioGravacao">        
+                    <h3 id="gravar_audio"></h3>
+                    <button id="record">Gravar</button>
+                    <button id="stop" disabled>Pausar</button>
+                    <button id="play" disabled>Ouvir</button>
+                    <button id="save" disabled>Save</button>
+                </div>
+
+                <div id="div-imagens">
+                    <p id="escolhaImagem"></p>
+                    
+                    <img src="_img/bola.png" id="bola" alt="">
+                    <img src="_img/bota.png" id="bota" alt="">
+
+                    <img src="_img/faca.png" id="faca" alt="">
+                    <img src="_img/vaca.png" id="vaca" alt="">
+
+                    <img src="_img/gato.png" id="gato" alt="">
+                    <img src="_img/pato.png" id="pato" alt="">
+                </div>
+
+                <div id="resultado"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="_js/script.js"></script>
+    <script src="_js/gravarAudio.js"></script>
+
+</body>
+</html>
