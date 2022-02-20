@@ -9,9 +9,9 @@
     var btnComecar = document.getElementById('comecarbtn')   
     var escolhaImagem = document.getElementById('escolhaImagem')
     var resultado = document.getElementById('resultado')
-    var reiniciarbtn = document.getElementById('reiniciarbtn')
     var pronuncia = document.getElementById('pronuncia')
     var tituloPrincipal = document.getElementById('tituloPrincipal')
+    var figure = document.getElementById('figure')
     
 
 //funções
@@ -23,6 +23,7 @@
     audioPalavras[0].style.display = 'block'
     btnComecar.style.display = 'none'
     tituloPrincipal.style.display = 'none'
+    figure.style.display = 'none'
 
     escolhaImagem.innerHTML = `Qual das imagens é a palavra destacada?`
     imagens[1].style.display = 'inline-block'
@@ -31,8 +32,8 @@
 
     //gravar audio
     function gravarAudio(){
-        gravaraudio.innerHTML = `Agora é com você. <br> Siga os seguintes passos:<br><br> 1- aperte no botão GRAVAR para você gravar sua voz.<br> 2- Aperte em PAUSAR 
-        para parar de gravar. <br> 3- Aperte em OUVIR para comparar sua pronúncia com a pronúncia do professor.<br> Depois escolha a imagem certa que combine com a palavra.`
+        gravaraudio.innerHTML = `<strong>Agora é com você. <br> Siga os seguintes passos:<br><br></strong> 1- Aperte no botão <u>GRAVAR</u> para você gravar sua voz.<br> 2- Aperte em <u>PAUSAR</u> 
+        para parar de gravar. <br> 3- Aperte em <u>OUVIR</u> para comparar sua pronúncia com a pronúncia do professor.<br> 4- Por último, ao lado, escolha a imagem certa que combine com a palavra.`
 
         button[0].style.display = 'inline-block'
         button[1].style.display = 'inline-block'
@@ -46,7 +47,7 @@
 
     //imagem errada
     function imagemErrada(){
-        return window.alert("Calma. Vamos tentar novamente. Leia e escute a palavra novamente.")
+        return window.alert("Calma. Vamos tentar novamente. Leia e escute a palavra mais uma vez.")
     }
 
 //chamadas
@@ -93,9 +94,7 @@
                           palavra.innerHTML = `Muito bem! Você conseguiu terminar o Jogo. Parabéns!`
                           gravaraudio.innerHTML = ''
                           escolhaImagem.innerHTML = ''
-                          pronuncia.innerHTML = ''                          
-                          btnComecar.style.display = 'block'
-                          btnComecar.setAttribute('value', 'Reiniciar')
+                          pronuncia.innerHTML = '' 
 
                           audioPalavras[2].style.display = 'none'
 

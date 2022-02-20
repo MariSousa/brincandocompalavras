@@ -6,6 +6,20 @@ body{
     background-color: #BBE8F2;
 }
 
+/*row*/
+.primeira-linha{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.introducao-jogo{
+    margin-top: 40px;
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -26,7 +40,32 @@ body{
 }
 
 .navbar>.container-fluid{
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.link-voltar-pgInicial{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s ease-in-out;
+}
+
+.link-voltar-pgInicial:hover{
+    color: #BBE8F2;
+}
+
+figcaption a {
+    color: #2685BF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s ease-in-out;
+}
+
+.começar-jogo{
+    display: inline-block;
+    margin-top: 20px;
+    border-bottom: 3px solid #2685BF;
+    padding-bottom: 5px;
 }
 
 img{
@@ -53,9 +92,10 @@ audio{
 }
 
 input[type="button" i] {
+    display: inline-block;
     background-color: #1E47A6;
     border: 2px solid #012475;
-    width: 20%;
+    width: 100%;
     color: white;
     padding: 20px;
     margin: 20px auto;
@@ -72,8 +112,8 @@ input[type="button" i]:hover{
 }
 
 h1{
-    font-weight: bold;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 30px;
 }
 
 h2{
@@ -84,10 +124,6 @@ h2{
 
 p{
     font-size: 18px;
-}
-
-#reiniciarbtn{
-    display: none;
 }
 
 .conteudo{
@@ -107,21 +143,15 @@ p{
 }
 
 .conteudoInterativo{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;    
-    justify-content: center;
+    margin-top: 50px;
 }
 
 .audioGravacao{
-    margin-right: 50px;
+    padding: 0 30px;
 }
 
 #gravar_audio{
-    width: 70%;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-right: 70px;
 }
 
 .audioGravacao button{
@@ -144,12 +174,56 @@ p{
     background-color: #021d5c;
 }
 
+.escolherImagens{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1025px){
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 90%;
+}
+
+.escolherImagens{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 40px;
+    margin-top: 40px;
+}
+}
+
 @media screen and (max-width: 760px) {
+    .navbar-brand {
+        color: white !important;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .link-voltar-pgInicial {
+        font-size: 16px !important;
+    }
+
+    .col-md-6{
+        width: 100%;
+    }
+
+    .audioGravacao {
+        padding: 0;
+    }
+
     .audioGravacao {
         margin-right: 0;
     }
     
     #gravar_audio{
+        padding: 0;
         width: 100%;
     }
 
@@ -170,6 +244,16 @@ p{
         font-size: 25px;
         text-transform: uppercase;
         transition: .5s ease-in-out;
+    }
+
+    .escolherImagens {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        margin-top: 40px;
     }
 
 }
