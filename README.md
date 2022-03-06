@@ -9,9 +9,8 @@ ele ficava menor.
 Sobre o projeto:
 O nome do projeto é: Brincando com as palavras.
 Ele tem como objetivo estimular as crianças que tem dificuldade com a leitura, a aprimorar sua pronúncia em determinadas palavras.
-Nesse projeto em específico só tem três rodadas. 
 
-A criança pode ouvir a pronúncia correta, gravar sua própria voz e ouvir depois para comparar.
+A criança pode ouvir a pronúncia correta, gravar sua própria voz, ouvir para comparar e digitar a palavra que falta nas frases.
 Logo em seguida ela faz a associação da palavra com uma imagem. Ela precisa escolher qual é a imagem que representa a palavra.
 
 Eu não sou profissional na área, mas com algumas pesquisas, encontei que essas são maneiras úteis de ajudar uma criança.
@@ -25,6 +24,4 @@ Pode mandar um email para mim: mari.sousa.136@gmail.com
 ----------------
 
 OBS.: por alguma razão a gravação do audio no mobile não está funcionando. Não sei resolver isso.
-Então, sugiro que teste o projeto em um desktop.
-
-OBS2.: o foco não foi o css, por isso não criei um site muito elaborado.
+Então, sugiro que teste o projeto em um desktop
