@@ -30,7 +30,6 @@ body{
     background-color: #3D9DD9 !important;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 50px;
 }
 
 .navbar-brand{
@@ -143,7 +142,7 @@ p{
 }
 
 .conteudoInterativo{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .audioGravacao{
@@ -180,6 +179,53 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.completarFraseBox{
+    margin-bottom: 50px;
+}
+
+#inputCompletarFrase, #verificarFrase {
+    display: none;
+}
+
+#verificarFrase{
+    font-size: 18px;
+    width: 50%;
+    height: 50px;
+    line-height: 10px;
+}
+
+#inputCompletarFrase{
+    border: 2px solid #1E47A6;
+    border-radius: 30px;
+    background-color: #a3d0ec;
+    height: 50px;
+    padding: 3%;
+}
+
+.input-btn-completarFrase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.escolherImagensBoxFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#resFrase{
+    display:inline-block ;
+    margin-top: 8px;
+    color: #6B2EA7;
+    font-weight: bold;
 }
 
 @media (max-width: 1025px){

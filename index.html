@@ -69,15 +69,43 @@
                         <div id="ouvirPalavra">
                             <p id="pronuncia"></p>
                             <audio controls>                    
-                                <source src="_audios/Bota.mp3" type="audio/mp3">
+                                <source src="_audios/Bota.mp3" type="audio/mp3"><!--0-->
                             </audio>
 
                             <audio controls>
-                                <source src="_audios/faca.mp3" type="audio/mp3">
+                                <source src="_audios/faca.mp3" type="audio/mp3"><!--1-->
                             </audio>
 
                             <audio controls>
-                                <source src="_audios/pato.mp3" type="audio/mp3">
+                                <source src="_audios/pato.mp3" type="audio/mp3"><!--2-->
+                            </audio>
+
+                            <audio controls>
+                                <source src="_audios/saco.mp3" type="audio/mp3"><!--3-->
+                            </audio>
+
+                            <audio controls>
+                                <source src="_audios/casa.mp3" type="audio/mp3"><!--4-->
+                            </audio>
+
+                            <audio controls>
+                                <source src="_audios/doce.mp3" type="audio/mp3"><!--5-->
+                            </audio>
+
+                            <audio controls>
+                                <source src="_audios/roda.mp3" type="audio/mp3"><!--6-->
+                            </audio>
+
+                            <audio controls>
+                                <source src="_audios/bote.mp3" type="audio/mp3"><!--7-->
+                            </audio>
+
+                            <audio controls>
+                                <source src="_audios/pes.mp3" type="audio/mp3"><!--8-->
+                            </audio>
+
+                            <audio controls>
+                                <source src="_audios/danca.mp3" type="audio/mp3"><!--9-->
                             </audio>
 
                         </div>                
@@ -93,7 +121,7 @@
             <div class="col-md-6">
                 <div >
                     <div class="audioGravacao">        
-                        <h3 id="gravar_audio"></h3>
+                        <h5 id="gravar_audio"></h5>
                         <button id="record">Gravar</button>
                         <button id="stop" disabled>Pausar</button>
                         <button id="play" disabled>Ouvir</button>
@@ -101,19 +129,58 @@
                     </div>
                 </div>
             </div>
-            <!--Escolher imagens-->
-            <div class="col-md-6 escolherImagens">
-                <div>
+
+           
+
+            
+            <div class="col-md-6 gravarAudio escolherImagens completarFrase"> 
+                
+                <!--Completar frase-->
+                <div style="text-align: center;" class="completarFraseBox">
+                    <h5 id="completar-frase"></h5>
+                    <div class="input-btn-completarFrase">
+                        <input style="margin: 0 auto;" type="text" name="inputCompletarFrase" id="inputCompletarFrase"> 
+                        <input style="margin: 0 auto;" type="button" value="Verificar Palavra" id="verificarFrase">
+                    </div>
+                    <h5 id="resFrase"></h5>
+                </div>
+
+                <!--Escolher imagens-->
+                <div class="escolherImagemBox">
                     <p id="escolhaImagem"></p>
+
+                    <div class="escolherImagensBoxFlex">
                     
-                    <img src="_img/bola.png" id="bola" alt="">
-                    <img src="_img/bota.png" id="bota" alt="">
+                        <img src="_img/bola.png" id="bola" alt=""><!--0-->
+                        <img src="_img/bota.png" id="bota" alt=""><!--1 - certa-->
 
-                    <img src="_img/faca.png" id="faca" alt="">
-                    <img src="_img/vaca.png" id="vaca" alt="">
+                        <img src="_img/faca.png" id="faca" alt=""><!--2 - certa-->
+                        <img src="_img/vaca.png" id="vaca" alt=""><!--3-->
 
-                    <img src="_img/gato.png" id="gato" alt="">
-                    <img src="_img/pato.png" id="pato" alt="">
+                        <img src="_img/prato.png" id="prato" alt=""><!--4-->
+                        <img src="_img/pato.png" id="pato" alt=""><!--5 - certa-->
+
+                        <img src="_img/saco.png" id="saco" alt=""><!--6 - certa-->
+                        <img src="_img/sapo.png" id="sapo" alt=""><!--7-->
+
+                        <img src="_img/asa.png" id="asa" alt=""><!--8-->
+                        <img src="_img/casa.png" id="casa" alt=""><!--9 - certa-->
+
+                        <img src="_img/doze.png" id="doze" alt=""><!--10-->
+                        <img src="_img/doce.png" id="doce" alt=""><!--11 - certa-->
+
+                        <img src="_img/roda.png" id="roda" alt=""><!--12 - certa-->
+                        <img src="_img/rosa.png" id="rosa" alt=""><!--13-->
+
+                        <img src="_img/bote.png" id="bote" alt=""><!--14 - certa-->
+                        <img src="_img/bode.png" id="bode" alt=""><!--15-->
+
+                        <img src="_img/10.png" id="dez" alt=""><!--16-->
+                        <img src="_img/pés.png" id="pes" alt=""><!--17 - certa-->
+
+                        <img src="_img/lanca.png" id="lanca" alt=""><!--18-->
+                        <img src="_img/danca.png" id="danca" alt=""><!--19 - certa-->
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,7 +195,7 @@
             </div>
     </div>
 
-    <script src="_js/script.js"></script>
+    <script src="jscript.js"></script>
     <script src="_js/gravarAudio.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
